@@ -1,3 +1,8 @@
+@font-face {
+    font-family: roboto-slab;
+    src: url(fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf)
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,18 +15,43 @@
 
 html {
     height: 100%;
+    font-family: roboto-slab, sans-serif;
 }
 
 body {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
     background-color: var(--main-color-1, blue);
-    color: var(--main-color-2, white);;
+    color: var(--main-color-2, white);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.sidebar > div > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--main-color-2, white);
+    font-size: 1.5rem;
+}
+
+.sidebar > div > a:hover {
+    text-decoration: underline;
 }
 
 .main {
@@ -36,13 +66,12 @@ body {
     grid-template-rows: 2fr 3fr;
     box-shadow: 2px 2px 12px;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
     align-items: center;
 }
 
 
 .top-panel form {
-    
     display: flex;
     align-items: center;
 }
