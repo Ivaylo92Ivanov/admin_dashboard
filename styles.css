@@ -189,14 +189,33 @@ body {
     padding: 1rem;
     box-shadow: 1px 1px 6px;
     transition: 0.5s;
+    display: grid;
 }
 
-
 .card:hover {
-    transform: scale(1.01);
+    box-shadow:1px 1px 12px;
+}
+
+.reactions {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.reactions button {
+    background-color: white;
+    border: none;   
+    transition: 0.5s;
+    padding: 1rem;
     
 }
 
+.reactions button:hover {
+    transform: scale(1.1);
+    box-shadow:1px 1px 12px;
+}
 
 .bottom-panel-left {
     display: grid;
