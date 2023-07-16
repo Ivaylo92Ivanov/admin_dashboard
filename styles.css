@@ -109,10 +109,26 @@ body {
 
 
 .profile-img {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 2px 2px 6px;
+    transition: 0.5s;
+}
+
+.profile-img-big {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 6px;
+    transition: 0.5s;
+}
+
+.profile-img-big:hover,
+.profile-img:hover {
+    transform: scale(1.1);
 }
 
 .notifications-container {
@@ -124,6 +140,7 @@ body {
 .greeting-container {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .top-panel-buttons {
@@ -193,11 +210,17 @@ body {
     padding: 1rem;
     border-radius: 12px;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     
 }
 
 .announcement:not(:last-child) {
     border-bottom: 2px solid var(--main-color-3, lightgray);
     padding-bottom: 1rem;
+}
+
+.trending {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
 }
