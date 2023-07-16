@@ -23,6 +23,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    background-color: var(--main-color-3);
 }
 
 .sidebar {
@@ -79,11 +80,12 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     box-shadow: 2px 2px 12px;
+    margin-bottom: 1rem; /* so box shadow is visible */
     gap: 1rem;
     padding: 1rem;
     align-items: center;
+    background-color: var(--main-color-2);
 }
-
 
 .top-panel form {
     display: flex;
@@ -180,8 +182,22 @@ body {
     gap: 1rem;
 }
 
-.bottom-panel-right > div > div {
+.bottom-panel-right > div {
+    display: grid;
+    gap: 1rem;
+}
+
+.announcements-container,
+.trending-container {
     background-color: var(--main-color-2, white);
     padding: 1rem;
     border-radius: 12px;
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 2px solid var(--main-color-3, lightgray);
+    padding-bottom: 1rem;
 }
