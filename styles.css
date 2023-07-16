@@ -157,6 +157,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 1.5rem;    
+    font-size: 2rem;
 }
 
 .top-panel-buttons button {
@@ -164,6 +165,7 @@ body {
     color: var(--main-color-2, white);
     padding: 0.5rem 1.5rem;
     border-radius: 12px;
+    font-size: 1rem;
 }
 
 .bottom-panel {
