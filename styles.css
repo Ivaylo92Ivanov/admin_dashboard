@@ -11,6 +11,7 @@
 :root {
     --main-color-1: rgb(0, 110, 255);
     --main-color-2: white;
+    --main-color-3: rgb(239, 237, 237);
 }
 
 html {
@@ -31,15 +32,24 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr 1fr;
-    
 }
+
+
 
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-
 }
+
+.sections, 
+.tools {
+    display:grid;
+    align-items: start;
+    grid-template-rows: repeat(auto-fit, minmax(1rem, 2rem));
+    gap: 1rem;
+}
+
 
 .sidebar > div > a {
     display: flex;
@@ -54,10 +64,15 @@ body {
     text-decoration: underline;
 }
 
+.sidebar > div> a > img {
+    height: 20px;
+}
+
 .main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
+    
 }
 
 .top-panel {
@@ -81,8 +96,9 @@ body {
     border-radius: 12px;
     border: none;
     margin-left: 0.5rem;
-    background-color: rgb(213, 213, 213);
-    height: 1rem;   
+    background-color: var(--main-color-3, lightgray);
+    height: 2rem;   
+    box-shadow: 1px 1px 2px;
 }
 
 .top-panel label {
@@ -107,6 +123,7 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 10px;
     padding: 1rem ;
+    background-color: var(--main-color-3, light-gray);
 }
 
 .bottom-panel-right {
