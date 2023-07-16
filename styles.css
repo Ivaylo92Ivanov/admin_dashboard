@@ -9,9 +9,11 @@
 }
 
 :root {
-    --main-color-1: rgb(0, 110, 255);
+    /* --main-color-1: rgb(0, 110, 255); */
+    --main-color-1: #047857;
     --main-color-2: white;
     --main-color-3: rgb(239, 237, 237);
+    --main-color-4: #d97706;
 }
 
 html {
@@ -137,6 +139,14 @@ body {
     gap: 1rem;
 }
 
+.notifications-container a {
+    transition: 0.5s;
+}
+
+.notifications-container a:hover {
+    transform: scale(1.3);
+}
+
 .greeting-container {
     display: flex;
     gap: 1rem;
@@ -174,7 +184,7 @@ body {
     height: 250px;
     max-width: 500px;
     background-color: var(--main-color-2, white);
-    border: orange 2px solid;
+    border-left: var(--main-color-4, gold) 1rem solid;
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 1px 1px 6px;
