@@ -180,10 +180,12 @@ body {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+    grid-template-rows: repeat(auto-fill, minmax(240px, 250px));
+    align-items: start;
 }
 
 .card {
-    height: 250px;
+    max-height: 250px;
     max-width: 500px;
     background-color: var(--main-color-2, white);
     border-left: var(--main-color-4, gold) 1rem solid;
@@ -222,6 +224,8 @@ body {
 .bottom-panel-left {
     display: grid;
     gap: 1rem;
+    grid-template-rows: auto 1fr;
+    
 }
 
 .bottom-panel-right {
