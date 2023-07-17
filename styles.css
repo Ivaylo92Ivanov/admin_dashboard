@@ -9,7 +9,6 @@
 }
 
 :root {
-    /* --main-color-1: rgb(0, 110, 255); */
     --main-color-1: #047857;
     --main-color-2: white;
     --main-color-3: rgb(239, 237, 237);
@@ -34,7 +33,6 @@ body {
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(auto-fill, minmax(20vh, auto)); */
     grid-template-rows: auto auto auto 1fr;
     gap: 6rem;
 }
@@ -192,7 +190,7 @@ body {
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 1px 1px 6px;
-    transition: 0.5s;
+    transition: 0.3s;
     display: grid;
 }
 
@@ -211,7 +209,7 @@ body {
 .reactions button {
     background-color: white;
     border: none;   
-    transition: 0.5s;
+    transition: 0.3s;
     padding: 1rem;
     
 }
